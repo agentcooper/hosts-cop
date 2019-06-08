@@ -13,12 +13,14 @@ For macOS.
 ## Install
 
 ```
-sudo ./install
+git clone https://github.com/agentcooper/hosts-cop
+sudo ./hosts-cop/install
 ```
 
 ## Uninstall
 
 ```
+# from hosts-cop directory
 sudo ./uninstall
 ```
 
