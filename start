@@ -19,5 +19,5 @@ sed "s#{PATH}#${SCRIPT_DIRECTORY}#" ./template/hosts-cop.plist > "$TARGET"
 sudo chown root:wheel "$TARGET"
 sudo launchctl load "$TARGET"
 
-echo "Hosts cop was installed! Try removing sites from /etc/hosts now."
-echo "Run 'sudo ./uninstall' to uninstall."
+echo "Hosts cop have been started! Try removing sites from /etc/hosts now."
+echo "Run 'sudo ./stop' to stop."

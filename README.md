@@ -1,6 +1,6 @@
 # Hosts cop
 
-`/etc/hosts` file is pretty useful for blocking websites ([guide](https://www.wikihow.com/Block-and-Unblock-Internet-Sites-(On-a-Mac)#Blocking_Sites_with_the_Hosts_File_sub)). Once you learn how to do it, it is also easy to unblock them.
+`/etc/hosts` file is pretty useful for blocking websites ([guide](<https://www.wikihow.com/Block-and-Unblock-Internet-Sites-(On-a-Mac)#Blocking_Sites_with_the_Hosts_File_sub>)). Once you learn how to do it, it is also easy to unblock them.
 
 Hosts cop will restore `/etc/hosts` file to the previous version each time you try to remove blocked sites from it.
 
@@ -14,14 +14,14 @@ For macOS.
 
 ```
 git clone https://github.com/agentcooper/hosts-cop
-sudo ./hosts-cop/install
+sudo ./hosts-cop/start
 ```
 
-## Uninstall
+## Stop
 
 ```
 # from hosts-cop directory
-sudo ./uninstall
+sudo ./stop
 ```
 
 ## Why `sudo`?
