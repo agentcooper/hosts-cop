@@ -1,8 +1,8 @@
 # Hosts cop
 
-If you have weak self-control.
+`/etc/hosts` file is pretty useful for blocking websites ([guide](https://www.wikihow.com/Block-and-Unblock-Internet-Sites-(On-a-Mac)#Blocking_Sites_with_the_Hosts_File_sub)). Once you learn how to do it, it is also easy to unblock them.
 
-Each time you try to remove blocked sites from `/etc/hosts` it will be restored to a previous version.
+Hosts cop will restore `/etc/hosts` file each time you try to remove blocked sites from it.
 
 ![notification](./screenshots/notification.png?raw=true)
 
