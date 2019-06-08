@@ -26,4 +26,4 @@ sudo ./stop
 
 ## Why `sudo`?
 
-Script needs to run from `/Library/LaunchDaemons/` to be able to write to `/etc/hosts`.
+Script needs to run from [`/Library/LaunchDaemons/`](https://www.launchd.info/) to be able to write to `/etc/hosts`.
