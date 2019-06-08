@@ -5,3 +5,7 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 sudo launchctl remove hosts-cop
+sudo rm -rf /Library/LaunchDaemons/hosts-cop.plist
+
+echo "Hosts cop have been stopped!"
+echo "Run 'sudo ./start' to restart."
