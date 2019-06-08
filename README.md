@@ -12,14 +12,14 @@ For macOS.
 
 ## Install
 
-```
+```bash
 git clone https://github.com/agentcooper/hosts-cop
 sudo ./hosts-cop/start
 ```
 
 ## Stop
 
-```
+```bash
 # from hosts-cop directory
 sudo ./stop
 ```
