@@ -1,8 +1,14 @@
 # Hosts cop
 
-For macOS.
+If you have weak self-control.
 
-Restore `/etc/hosts` if modified while hosts-cop is running.
+Each time you try to remove blocked sites from `/etc/hosts` it will be restored to a previous version.
+
+![notification](./screenshots/notification.png?raw=true)
+
+Adding sites to `/etc/hosts` will not trigger a notification.
+
+For macOS.
 
 ## Install
 

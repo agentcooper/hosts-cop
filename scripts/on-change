@@ -29,7 +29,7 @@ if `./compare-hosts --silent --previous=../user/previous-hosts.txt`; then
 	echo "OK"
 else
 	should_write_back=true
-  MESSAGE="I'm putting /etc/hosts back...\n"
+  MESSAGE="I'm restoring /etc/hosts back!\n"
 
 	# broadcast_message "$MESSAGE"
 	display_notification "$MESSAGE" "Hosts cop 👮‍♀️"
