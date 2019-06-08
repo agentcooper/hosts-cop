@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-  <key>Label</key>
-  <string>hosts-cop</string>
-  <key>ProgramArguments</key>
-  <array>
-    <string>{PATH}/scripts/on-change</string>
-  </array>
-  <key>WatchPaths</key>
-  <array>
-    <string>/etc/hosts</string>
-  </array>
-  <key>StandardOutPath</key>
-  <string>{PATH}/logs/on-change-stdout.txt</string>
-  <key>StandardErrorPath</key>
-  <string>{PATH}/logs/on-change-stderr.txt</string>
-</dict>
+  <dict>
+    <key>Label</key>
+    <string>hosts-cop</string>
+    <key>ProgramArguments</key>
+    <array>
+      <string>{PATH}/scripts/on-change</string>
+    </array>
+    <key>WatchPaths</key>
+    <array>
+      <string>/etc/hosts</string>
+    </array>
+    <key>StandardOutPath</key>
+    <string>{PATH}/logs/on-change-stdout.txt</string>
+    <key>StandardErrorPath</key>
+    <string>{PATH}/logs/on-change-stderr.txt</string>
+  </dict>
 </plist>
