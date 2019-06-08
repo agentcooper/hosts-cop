@@ -24,16 +24,11 @@ fi
 if `./compare-hosts --silent --previous=../user/previous-hosts.txt`; then
   echo "OK"
 else
-  should_write_back=true
-  MESSAGE="I'm restoring /etc/hosts back!\n"
+  display_notification "I'm restoring /etc/hosts back!\n" "Hosts cop 👮‍♀️"
 
-  display_notification "$MESSAGE" "Hosts cop 👮‍♀️"
-
-  if [ "$should_write_back" = true ] ; then
-    touch ../user/lock
-    cat ../user/previous-hosts.txt > /etc/hosts
-    rm ../user/lock
-  fi
+  touch ../user/lock
+  cat ../user/previous-hosts.txt > /etc/hosts
+  rm ../user/lock
 fi
 
 cat /etc/hosts > ../user/previous-hosts.txt
