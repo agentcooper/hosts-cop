@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+cd "$(dirname "$0")"
+
+echo -n "" > ./logs/on-change-stdout.txt
+echo -n "" > ./logs/on-change-stderr.txt

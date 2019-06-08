@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root! Use sudo command."
+   echo ""
+   echo "Explanation: script needs to run from /Library/LaunchDaemons/ to be able to write to /etc/hosts."
+   exit 1
+fi
+
+SCRIPT_DIRECTORY="$( cd "$(dirname "$0")" ; pwd -P )"
+cd "$(dirname "$0")"
+
+# save current /etc/hosts
+cat /etc/hosts > ./user/previous-hosts.txt
+
+TARGET="/Library/LaunchDaemons/hosts-cop.plist"
+
+sudo launchctl remove hosts-cop
+sed "s#{PATH}#${SCRIPT_DIRECTORY}#" ./template/hosts-cop.plist > "$TARGET"
+sudo chown root:wheel "$TARGET"
+sudo launchctl load "$TARGET"
+
+echo "OK"
